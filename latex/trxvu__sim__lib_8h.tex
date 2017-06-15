@@ -1,0 +1,74 @@
+\hypertarget{trxvu__sim__lib_8h}{}\section{obc-\/tm-\/test/trxvu\+\_\+sim\+\_\+lib.h File Reference}
+\label{trxvu__sim__lib_8h}\index{obc-\/tm-\/test/trxvu\+\_\+sim\+\_\+lib.\+h@{obc-\/tm-\/test/trxvu\+\_\+sim\+\_\+lib.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_addb19d3cad828ef25e991e3d0747aa27}\label{trxvu__sim__lib_8h_addb19d3cad828ef25e991e3d0747aa27}} 
+\#define {\bfseries G\+E\+N\+E\+R\+A\+L\+\_\+\+E\+R\+R\+OR}~7
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_ab4556e7b441bc247315ea9a2f3afe79c}\label{trxvu__sim__lib_8h_ab4556e7b441bc247315ea9a2f3afe79c}} 
+\#define {\bfseries T\+I\+M\+E\+\_\+\+O\+U\+T\+\_\+\+E\+R\+R\+OR}~6
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_a7f62d8d6f050391f0f3e6058867c4cfd}\label{trxvu__sim__lib_8h_a7f62d8d6f050391f0f3e6058867c4cfd}} 
+\#define {\bfseries W\+R\+I\+T\+E\+\_\+\+E\+R\+R\+OR}~4
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_a258bb72419ef143530a2f8f55e7d57af}\label{trxvu__sim__lib_8h_a258bb72419ef143530a2f8f55e7d57af}} 
+\#define {\bfseries N\+O\+\_\+\+E\+R\+R\+OR}~0
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_a3b7e08f6338224cdaa850256c1ea1d3e}\label{trxvu__sim__lib_8h_a3b7e08f6338224cdaa850256c1ea1d3e}} 
+\#define {\bfseries D\+O\+W\+N\+L\+I\+N\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+F\+U\+LL}~255
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_ada176324a4df21f3854e1feb73852236}\label{trxvu__sim__lib_8h_ada176324a4df21f3854e1feb73852236}} 
+\#define {\bfseries I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+A\+L\+L\+S\+I\+GN}~254
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_a073e358d09735cb6d984bd6be339ed12}\label{trxvu__sim__lib_8h_a073e358d09735cb6d984bd6be339ed12}} 
+\#define {\bfseries P\+A\+C\+K\+E\+T\+\_\+\+T\+O\+O\+\_\+\+L\+A\+R\+GE}~252
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_aa01bbc811df9390e8c42150745b4f857}\label{trxvu__sim__lib_8h_aa01bbc811df9390e8c42150745b4f857}} 
+\#define {\bfseries S\+E\+N\+D\+\_\+\+T\+M\+\_\+\+D\+E\+F\+\_\+\+C\+A\+L\+L\+S\+I\+GN}~0x10
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_a497b1d258f6a80d12a88b5cffc5e320f}\label{trxvu__sim__lib_8h_a497b1d258f6a80d12a88b5cffc5e320f}} 
+\#define {\bfseries S\+E\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+O\+\_\+\+C\+A\+L\+L\+S\+I\+GN}~0x22
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_a3d3fa6d1b6fb27c4cb3ed1c97ba7096b}\label{trxvu__sim__lib_8h_a3d3fa6d1b6fb27c4cb3ed1c97ba7096b}} 
+\#define {\bfseries M\+A\+X\+I\+M\+U\+M\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}~235
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_a84e255b0fdd0ddbc503dc3845c005398}\label{trxvu__sim__lib_8h_a84e255b0fdd0ddbc503dc3845c005398}} 
+void {\bfseries generate\+\_\+command} (uint8\+\_\+t $\ast$command\+\_\+buffer, uint32\+\_\+t $\ast$command\+\_\+length, uint8\+\_\+t command, uint8\+\_\+t $\ast$parameter, uint8\+\_\+t parameter\+\_\+length)
+\item 
+\mbox{\Hypertarget{trxvu__sim__lib_8h_a27371f40df6f99a258d2d6f265ccf853}\label{trxvu__sim__lib_8h_a27371f40df6f99a258d2d6f265ccf853}} 
+int {\bfseries Sim\+Trxvu\+\_\+tc\+Set\+Def\+To\+Cl\+Sign} (unsigned char index, unsigned char $\ast$from\+Callsign, unsigned char $\ast$feedback)
+\item 
+int \hyperlink{trxvu__sim__lib_8h_a12c7fbf9c0b26734ff41f0c6f1761c67}{Sim\+Trxvu\+\_\+tc\+Send\+A\+X25\+Def\+Cl\+Sign} (unsigned char index, unsigned char $\ast$data, unsigned char length, unsigned char $\ast$avail)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{trxvu__sim__lib_8h_a12c7fbf9c0b26734ff41f0c6f1761c67}\label{trxvu__sim__lib_8h_a12c7fbf9c0b26734ff41f0c6f1761c67}} 
+\index{trxvu\+\_\+sim\+\_\+lib.\+h@{trxvu\+\_\+sim\+\_\+lib.\+h}!Sim\+Trxvu\+\_\+tc\+Send\+A\+X25\+Def\+Cl\+Sign@{Sim\+Trxvu\+\_\+tc\+Send\+A\+X25\+Def\+Cl\+Sign}}
+\index{Sim\+Trxvu\+\_\+tc\+Send\+A\+X25\+Def\+Cl\+Sign@{Sim\+Trxvu\+\_\+tc\+Send\+A\+X25\+Def\+Cl\+Sign}!trxvu\+\_\+sim\+\_\+lib.\+h@{trxvu\+\_\+sim\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{Sim\+Trxvu\+\_\+tc\+Send\+A\+X25\+Def\+Cl\+Sign()}{SimTrxvu\_tcSendAX25DefClSign()}}
+{\footnotesize\ttfamily int Sim\+Trxvu\+\_\+tc\+Send\+A\+X25\+Def\+Cl\+Sign (\begin{DoxyParamCaption}\item[{unsigned char}]{index,  }\item[{unsigned char $\ast$}]{data,  }\item[{unsigned char}]{length,  }\item[{unsigned char $\ast$}]{avail }\end{DoxyParamCaption})}
+
+function is devied into 2 steps
+\begin{DoxyEnumerate}
+\item sending a byte to indicate the command for trxvu
+\item sending data to trxvu . 
+\begin{DoxyParams}{Parameters}
+{\em index} & I2C address \\
+\hline
+{\em data} & data to be sent downinked \\
+\hline
+{\em length} & length of data to be downlinked \\
+\hline
+{\em avail} & pointer to buffer, where the available frame count will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+what would be written in doxygen? \+:0 
+\end{DoxyNote}
+
+\end{DoxyEnumerate}
