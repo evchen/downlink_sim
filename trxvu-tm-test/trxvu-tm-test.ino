@@ -42,10 +42,10 @@ void loop() {
   if( (tail_of_queue - head_of_queue) > 0){
     
     kiss_encode(kiss_packet, &kiss_packet_length, (uint8_t*)ax25_callsign_frame_buffer[head_of_queue%40], ax25_callsign_frame_length[(head_of_queue)%40] );
-    SerialUSB.write(kiss_packet, kiss_packet_length);
+    Serial.write(kiss_packet, kiss_packet_length);
     digitalWrite(7,HIGH);
-    Serial.print("send frame ");
-    Serial.println(head_of_queue);
+    SerialUSB.print("send frame ");
+    SerialUSB.println(head_of_queue);
     digitalWrite(7,LOW);
     head_of_queue++;
 

@@ -54,6 +54,9 @@ void loop() {
         Serial.print(ax25_callsign_frame_buffer[i][j], HEX);
       }
       Serial.println();
+       
+    kiss_encode(kiss_packet, &kiss_packet_length, (uint8_t*)ax25_callsign_frame_buffer[i], ax25_callsign_frame_length[i] );
+    SerialUSB.write(kiss_packet, kiss_packet_length);
     }
   }
   if(flag)
