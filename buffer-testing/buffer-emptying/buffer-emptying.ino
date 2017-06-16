@@ -55,7 +55,7 @@ void loop() {
   while(head_of_queue < 40){
     
     kiss_encode(kiss_packet, &kiss_packet_length, (uint8_t*)ax25_callsign_frame_buffer[head_of_queue%40], ax25_callsign_frame_length[(head_of_queue)%40] );
-    SerialUSB.write(kiss_packet, kiss_packet_length);
+    Serial.write(kiss_packet, kiss_packet_length);
     head_of_queue++;
   }
   t_stop = micros();
